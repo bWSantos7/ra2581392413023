@@ -1,11 +1,436 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio - BRUNO ALVES PEREIRA DOS SANTOS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruno Santos | Portfólio</title>
+  <meta name="description" content="Portfólio de Bruno Alves Pereira dos Santos — Desenvolvedor de Software, Analista de Dados e Automações & BI. Aluno de Desenvolvimento de Software Multiplataforma na Fatec Jacareí.">
+  <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Bem vindo ao Portfólio de BRUNO ALVES PEREIRA DOS SANTOS</h1>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a href="#topo" class="logo">Bruno<span>.</span>dev</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#sobre" data-nav-link>Sobre</a>
+        <a href="#tecnologias" data-nav-link>Tecnologias</a>
+        <a href="#projetos" data-nav-link>Projetos</a>
+        <a href="#formacao" data-nav-link>Formação</a>
+        <a href="#contato" data-nav-link class="nav-cta">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- APRESENTAÇÃO -->
+    <section id="topo" class="hero container">
+      <div class="hero-text" data-reveal>
+        <p class="eyebrow">Portfólio Digital · Fatec Jacareí</p>
+        <h1>Bruno Alves Pereira <span class="text-gradient">dos Santos</span></h1>
+        <p class="role">Desenvolvedor de Software · Analista de Dados · Automações &amp; BI</p>
+        <p class="hero-desc">
+          Estudante do último semestre de Desenvolvimento de Software Multiplataforma na Fatec Jacareí,
+          com atuação prática em automações de processos, análise de dados e desenvolvimento de soluções
+          inteligentes. Experiência consolidada em ambientes administrativos e comerciais, com destaque
+          para automações em Python e N8N e suporte à inteligência de dados no setor de construção civil.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-outline" href="#contato">Falar comigo</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>6º</dt><dd>Semestre DSM</dd></div>
+          <div><dt>7</dt><dd>Projetos no portfólio</dd></div>
+          <div><dt>2+</dt><dd>Anos de experiência</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-photo" data-reveal data-reveal-delay="1">
+        <div class="hero-photo-ring">
+          <img src="assets/avatar.jpg" alt="Foto de Bruno Alves Pereira dos Santos" width="220" height="220">
+        </div>
+        <span class="floating-chip chip-a">Python</span>
+        <span class="floating-chip chip-b">React</span>
+        <span class="floating-chip chip-c">N8N</span>
+      </div>
+
+      <a class="scroll-cue" href="#sobre" aria-label="Rolar para a próxima seção">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="sobre" class="section container">
+      <div class="section-head" data-reveal>
+        <span class="section-no">01</span>
+        <div>
+          <p class="eyebrow">Objetivo</p>
+          <h2>Objetivos profissionais</h2>
+        </div>
+      </div>
+      <p class="section-lead" data-reveal>
+        Busco atuar como desenvolvedor de software e analista de dados, com foco em automação de
+        processos, Business Intelligence e soluções orientadas a dados. Tenho interesse crescente em
+        agentes de inteligência artificial, computação em nuvem (AWS e Google Cloud) e arquiteturas
+        de automação com N8N e Python.
+      </p>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section id="tecnologias" class="section container">
+      <div class="section-head" data-reveal>
+        <span class="section-no">02</span>
+        <div>
+          <p class="eyebrow">Stack</p>
+          <h2>Conhecimentos técnicos</h2>
+        </div>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card" data-reveal>
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3h5a2 2 0 0 1 2 2v3H7.5V5a2 2 0 0 1 2-2zm-2 7h9a2 2 0 0 1 2 2v3a4 4 0 0 1-4 4h-5a4 4 0 0 1-4-4v-3a2 2 0 0 1 2-2zm3.2 4.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/></svg>
+          </div>
+          <h3>Linguagens &amp; Web</h3>
+          <ul class="tag-list">
+            <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li>
+            <li>HTML5</li><li>CSS3</li><li>React</li><li>Next.js</li>
+          </ul>
+        </div>
+        <div class="tech-card" data-reveal data-reveal-delay="1">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4.4 0 8 1.34 8 3s-3.6 3-8 3-8-1.34-8-3 3.6-3 8-3zm-8 5.5c0 1.66 3.6 3 8 3s8-1.34 8-3V11c0 1.66-3.6 3-8 3s-8-1.34-8-3V8.5zm0 5.5c0 1.66 3.6 3 8 3s8-1.34 8-3v2.5c0 1.66-3.6 3-8 3s-8-1.34-8-3V14z"/></svg>
+          </div>
+          <h3>Dados &amp; BI</h3>
+          <ul class="tag-list">
+            <li>Power BI</li><li>PostgreSQL</li><li>Machine Learning</li><li>SQLAlchemy</li>
+          </ul>
+        </div>
+        <div class="tech-card" data-reveal data-reveal-delay="2">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 .1-1 7.5 7.5 0 0 0-.1-1l2-1.6-2-3.4-2.3.9a7.7 7.7 0 0 0-1.7-1L15 3.5h-4l-.4 2.4a7.7 7.7 0 0 0-1.7 1l-2.3-.9-2 3.4L6.6 11a7.5 7.5 0 0 0-.1 1c0 .34.03.67.1 1l-2 1.6 2 3.4 2.3-.9c.5.42 1.08.76 1.7 1l.4 2.5h4l.4-2.4c.62-.24 1.2-.58 1.7-1l2.3.9 2-3.4-2-1.7zM13 15.5A3.5 3.5 0 1 1 13 8.5a3.5 3.5 0 0 1 0 7z"/></svg>
+          </div>
+          <h3>Automação &amp; Sistemas</h3>
+          <ul class="tag-list">
+            <li>N8N</li><li>ERP UAU</li><li>CRM CV</li><li>Flask</li><li>Django</li>
+          </ul>
+        </div>
+        <div class="tech-card" data-reveal data-reveal-delay="3">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 19a4.5 4.5 0 0 1-.7-8.94A6 6 0 0 1 17.3 8.1 5 5 0 0 1 17 18v1H6.5v-.02z"/></svg>
+          </div>
+          <h3>Cloud &amp; Ferramentas</h3>
+          <ul class="tag-list">
+            <li>AWS</li><li>Google Cloud</li><li>Docker</li><li>Git &amp; GitHub</li><li>Pacote Office</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section container">
+      <div class="section-head" data-reveal>
+        <span class="section-no">03</span>
+        <div>
+          <p class="eyebrow">Trabalho</p>
+          <h2>Projetos</h2>
+        </div>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filtrar projetos por categoria" data-reveal>
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+        <button class="filter-btn" data-filter="academico" role="tab" aria-selected="false">Acadêmicos</button>
+        <button class="filter-btn" data-filter="profissional" role="tab" aria-selected="false">Profissionais</button>
+        <button class="filter-btn" data-filter="pessoal" role="tab" aria-selected="false">Pessoais</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <!-- ACADÊMICOS -->
+        <article class="project-card cat-academico" data-category="academico" data-reveal>
+          <div class="project-thumb">
+            <img src="assets/projects/njord.jpg" alt="Captura de tela da aplicação Njord" loading="lazy" width="960" height="448">
+          </div>
+          <div class="project-head">
+            <span class="badge badge-academico">Acadêmico</span>
+            <span class="project-date">6DSM · 2º Sem. 2026</span>
+          </div>
+          <h3>Njord</h3>
+          <p class="project-desc">
+            Aplicação desenvolvida para o projeto LabWind (CNPq), para monitorar em tempo real as
+            condições do Lago de Furnas a partir de dados coletados por sensores, gerando gráficos,
+            acompanhamento do nível da água e alertas em situações de alteração significativa.
+          </p>
+          <p class="project-contrib"><strong>Contribuição pessoal:</strong> desenvolvimento do frontend em React, consumo da API de dados dos sensores e construção dos painéis de visualização e alertas.</p>
+          <ul class="tag-list small">
+            <li>React</li><li>JavaScript</li><li>CSS3</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://njord-static.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Acessar aplicação
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card cat-academico" data-category="academico" data-reveal data-reveal-delay="1">
+          <div class="project-thumb">
+            <img src="assets/projects/safetemp.jpg" alt="Captura de tela da aplicação SafeTemp" loading="lazy" width="960" height="449">
+          </div>
+          <div class="project-head">
+            <span class="badge badge-academico">Acadêmico</span>
+            <span class="project-date">6DSM · 2º Sem. 2026</span>
+          </div>
+          <h3>SafeTemp</h3>
+          <p class="project-desc">
+            Sistema web e mobile desenvolvido para monitorar as estufas laboratoriais da Fatec Jacareí,
+            acompanhando condições ambientais, auxiliando no controle dos experimentos e centralizando
+            o monitoramento das operações.
+          </p>
+          <p class="project-contrib"><strong>Contribuição pessoal:</strong> desenvolvimento de funcionalidades do sistema web e apoio na estruturação do monitoramento dos dados ambientais.</p>
+          <ul class="tag-list small">
+            <li>React</li><li>Vite</li><li>TypeScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://safetemp.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Acessar aplicação
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card cat-academico" data-category="academico" data-reveal data-reveal-delay="2">
+          <div class="project-thumb">
+            <img src="assets/projects/ceres-vita.jpg" alt="Captura de tela da aplicação Ceres Vita" loading="lazy" width="960" height="452">
+          </div>
+          <div class="project-head">
+            <span class="badge badge-academico">Acadêmico</span>
+            <span class="project-date">6DSM · 2º Sem. 2026</span>
+          </div>
+          <h3>Ceres Vita</h3>
+          <p class="project-desc">
+            Aplicação web voltada ao controle e acompanhamento nutricional, permitindo registrar
+            alimentos consumidos, calcular calorias e organizar informações nutricionais de forma
+            simples e intuitiva.
+          </p>
+          <p class="project-contrib"><strong>Contribuição pessoal:</strong> desenvolvimento de funcionalidades da aplicação e da lógica de cálculo e organização das informações nutricionais.</p>
+          <ul class="tag-list small">
+            <li>React</li><li>Vite</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://ceres-vita.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Acessar aplicação
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROFISSIONAIS -->
+        <article class="project-card cat-profissional" data-category="profissional" data-reveal>
+          <div class="project-thumb">
+            <img src="assets/projects/build_flow.jpg" alt="Captura de tela da aplicação Build Flow" loading="lazy" width="960" height="447">
+          </div>
+          <div class="project-head">
+            <span class="badge badge-profissional">Profissional</span>
+            <span class="project-date">2025–2026</span>
+          </div>
+          <h3>Build Flow</h3>
+          <p class="project-desc">
+            Plataforma de acompanhamento comercial em tempo real, com atualização de indicadores via
+            WebSockets e persistência de dados em PostgreSQL.
+          </p>
+          <p class="project-contrib"><strong>Contribuição pessoal:</strong> desenvolvimento individual e completo da aplicação — backend, frontend e modelagem do banco de dados.</p>
+          <ul class="tag-list small">
+            <li>Python</li><li>Flask</li><li>WebSockets</li><li>PostgreSQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/bWS7/build_flow" target="_blank" rel="noopener noreferrer">
+              Repositório
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card cat-profissional" data-category="profissional" data-reveal data-reveal-delay="1">
+          <div class="project-thumb">
+            <img src="assets/projects/tenfy.jpg" alt="Captura de tela da aplicação Tenfy" loading="lazy" width="960" height="446">
+          </div>
+          <div class="project-head">
+            <span class="badge badge-profissional">Profissional</span>
+            <span class="project-date">2025–2026</span>
+          </div>
+          <h3>Tenfy</h3>
+          <p class="project-desc">
+            Plataforma para acompanhamento de torneios de tênis ao vivo, com API REST e processamento
+            assíncrono de dados em tempo real.
+          </p>
+          <p class="project-contrib"><strong>Contribuição pessoal:</strong> desenvolvimento individual e completo da aplicação — API REST, processamento assíncrono e frontend.</p>
+          <ul class="tag-list small">
+            <li>Python</li><li>Django REST</li><li>TypeScript</li><li>Redis</li><li>Celery</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/bWSantos7/tenfy" target="_blank" rel="noopener noreferrer">
+              Repositório
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card cat-profissional" data-category="profissional" data-reveal data-reveal-delay="2">
+          <div class="project-thumb">
+            <img src="assets/projects/pesquisa.jpg" alt="Captura de tela do dashboard Pesquisa Concorrentes" loading="lazy" width="960" height="441">
+          </div>
+          <div class="project-head">
+            <span class="badge badge-profissional">Profissional</span>
+            <span class="project-date">2025–2026</span>
+          </div>
+          <h3>Pesquisa Concorrentes</h3>
+          <p class="project-desc">
+            Aplicativo de pesquisa mensal de mercado imobiliário, com coleta de dados por agentes de
+            campo e dashboard de acompanhamento para o gestor.
+          </p>
+          <p class="project-contrib"><strong>Contribuição pessoal:</strong> desenvolvimento individual e completo da aplicação — dashboard, coleta de dados e banco de dados.</p>
+          <ul class="tag-list small">
+            <li>TypeScript</li><li>PostgreSQL</li><li>PL/pgSQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/bWSantos7/pesquisa-concorrentes" target="_blank" rel="noopener noreferrer">
+              Repositório
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- PESSOAL -->
+        <article class="project-card cat-pessoal" data-category="pessoal" data-reveal>
+          <div class="project-thumb">
+            <img src="assets/projects/gifts.jpg" alt="Captura de tela do site Gifts — Kamille & Bruno" loading="lazy" width="960" height="447">
+          </div>
+          <div class="project-head">
+            <span class="badge badge-pessoal">Pessoal</span>
+            <span class="project-date">2025–2026</span>
+          </div>
+          <h3>Gifts — Lista de Casamento</h3>
+          <p class="project-desc">
+            Site de lista de presentes de casamento (Kamille &amp; Bruno), permitindo aos convidados
+            visualizar e escolher presentes de forma simples.
+          </p>
+          <p class="project-contrib"><strong>Contribuição pessoal:</strong> desenvolvimento individual e completo do site.</p>
+          <ul class="tag-list small">
+            <li>TypeScript</li><li>Next.js</li><li>CSS3</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/bWSantos7/gifts" target="_blank" rel="noopener noreferrer">
+              Repositório
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INFORMAÇÕES COMPLEMENTARES -->
+    <section id="formacao" class="section container">
+      <div class="section-head" data-reveal>
+        <span class="section-no">04</span>
+        <div>
+          <p class="eyebrow">Trajetória</p>
+          <h2>Formação e informações complementares</h2>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card" data-reveal>
+          <h3>Formação acadêmica</h3>
+          <p><strong>Tecnólogo em Desenvolvimento de Software Multiplataforma</strong><br>
+          Fatec Jacareí — 2023 a 2026 (cursando, 6º semestre)</p>
+        </div>
+
+        <div class="info-card" data-reveal data-reveal-delay="1">
+          <h3>Cursos e certificações</h3>
+          <ul class="plain-list">
+            <li>Business Intelligence (Power BI, SQL, Python) — DSA – Data Science Academy</li>
+            <li>Google Cloud (Fundamentos) — Google</li>
+            <li>Pacote Office &amp; Informática — Evolui+</li>
+            <li>Inglês Intermediário — CEL Centro de Estudos de Línguas, Jacareí</li>
+          </ul>
+        </div>
+
+        <div class="info-card" data-reveal data-reveal-delay="2">
+          <h3>Idiomas</h3>
+          <ul class="plain-list">
+            <li>Português — nativo</li>
+            <li>Inglês — intermediário</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATOS -->
+    <section id="contato" class="section container">
+      <div class="section-head" data-reveal>
+        <span class="section-no">05</span>
+        <div>
+          <p class="eyebrow">Vamos conversar</p>
+          <h2>Contato</h2>
+        </div>
+      </div>
+      <div class="contact-links">
+        <a class="contact-item" href="https://www.linkedin.com/in/brunoalvespereiradossantos2/" target="_blank" rel="noopener noreferrer" data-reveal>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+          </span>
+          <span>
+            <strong>LinkedIn</strong>
+            <small>brunoalvespereiradossantos2</small>
+          </span>
+        </a>
+        <a class="contact-item" href="https://github.com/bWSantos7" target="_blank" rel="noopener noreferrer" data-reveal data-reveal-delay="1">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </span>
+          <span>
+            <strong>GitHub</strong>
+            <small>bWSantos7</small>
+          </span>
+        </a>
+        <a class="contact-item" href="https://github.com/bWS7" target="_blank" rel="noopener noreferrer" data-reveal data-reveal-delay="2">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </span>
+          <span>
+            <strong>GitHub</strong>
+            <small>bWS7</small>
+          </span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bar">
+      <p>Bruno Alves Pereira dos Santos — Portfólio Digital · Fatec Jacareí · Desenvolvimento de Software Multiplataforma</p>
+      <a href="#topo" class="to-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
